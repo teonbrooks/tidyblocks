@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TidyBlocks Blog</title>
+  <link href="https://tidyblocks.tech/feed.xml" rel="self"/>
+  <link href="https://tidyblocks.tech"/>
+  <updated>2020-07-28T12:00:00</updated>
+  <id>https://tidyblocks.tech</id>
+  <author>
+    <name>The TidyBlocks Team</name>
+    <email>info@tidyblocks.tech</email>
+  </author>
+  
+  <entry>
+    <title>Update on Join</title>
+    <link href="https://tidyblocks.tech/blog/2020/12/29/update-on-join/"/>
+    <updated>2020-12-29T02:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/12/29/update-on-join/</id>
+    <content type="html">Our previous post
+outlined a new design for representing joins.
+To recap,
+in our existing implementation the pipelines that are producing data to be joined
+must use a saveAs block to save that data;
+each join block waits until the data it needs is available.
+This works,
+but the relationship between pipelines that produce data
+and pipelines that...</content>
+  </entry>
+  
+  <entry>
+    <title>A New Design for Join</title>
+    <link href="https://tidyblocks.tech/blog/2020/12/20/a-new-design-for-join/"/>
+    <updated>2020-12-20T02:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/12/20/a-new-design-for-join/</id>
+    <content type="html">Our previous post
+talked about the problem of representing join operations with blocks.
+Our existing implementation uses a &quot;listen for a signal&quot; approach,
+which means there is no visual clue that pipeline C depends on pipelines A and B.
+In other words,
+one of the most complex operations we support is invisible in the user...</content>
+  </entry>
+  
+  <entry>
+    <title>Representing Joins</title>
+    <link href="https://tidyblocks.tech/blog/2020/11/12/representing-join/"/>
+    <updated>2020-11-12T02:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/11/12/representing-join/</id>
+    <content type="html">It has been a quiet couple of months for TidyBlocks development:
+everyone on the team was hit with work deadlines at the same time,
+and our first attempt to secure a bit of funding didn't work out.
+But the break has given us a chance to reflect on our current interface,
+and one thing...</content>
+  </entry>
+  
+  <entry>
+    <title>The Other Ninety Percent</title>
+    <link href="https://tidyblocks.tech/blog/2020/08/28/the-other-ninety-percent/"/>
+    <updated>2020-08-28T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/08/28/the-other-ninety-percent/</id>
+    <content type="html">We made several improvements to TidyBlocks this week,
+but not all of them are visible to users.
+The ones that are include:
+
+More of the interface has been translated.
+We now have a block for calculating running sums and averages.
+And there is another new block for shifting columns up and down
+so that users can...</content>
+  </entry>
+  
+  <entry>
+    <title>And Now for Some Statistics</title>
+    <link href="https://tidyblocks.tech/blog/2020/08/15/and-now-for-some-statistics/"/>
+    <updated>2020-08-15T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/08/15/and-now-for-some-statistics/</id>
+    <content type="html">It has been another busy week for TidyBlocks:
+we have a beautiful new layout courtesy of Maya Gans,
+we can download SVG versions of all our blocks at once thanks to Justin Singh,
+and we have a new Twitter account @tidyblocks.
+We have also started to add more statistical blocks
+so that people can use...</content>
+  </entry>
+  
+  <entry>
+    <title>The Hippocratic License</title>
+    <link href="https://tidyblocks.tech/blog/2020/08/14/hippocratic-license/"/>
+    <updated>2020-08-14T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/08/14/hippocratic-license/</id>
+    <content type="html">Over the past few years,
+more and more people have become concerned with
+the ethical implications of work in data science and machine learning.
+From algorithmic bias to facial recognition,
+the tools we teach people to build and use have the potential to do great harm;
+as teachers,
+we have a responsibility to make our students...</content>
+  </entry>
+  
+  <entry>
+    <title>TidyBlocks Meets React</title>
+    <link href="https://tidyblocks.tech/blog/2020/08/02/react/"/>
+    <updated>2020-08-02T13:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/08/02/react/</id>
+    <content type="html">TidyBlocks was originally developed as purely a JavaScript application, which
+made it difficult to really modify and customize the UI. When it came time to give
+things a fresh coat of paint we decided to build it using React for three main reasons:
+
+
+Components. We'd be able to take advantage of the React...</content>
+  </entry>
+  
+  <entry>
+    <title>Creating a Block</title>
+    <link href="https://tidyblocks.tech/blog/2020/08/02/creating-a-block/"/>
+    <updated>2020-08-02T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/08/02/creating-a-block/</id>
+    <content type="html">We love collaborators and welcome any PRs with new block ideas,
+so this developer tutorial will walk you through creating your own statistical block.
+All TidyBlocks blocks have three parts, which we will look at in turn:
+
+The block UI: what the block looks like and what fields it includes
+The generator code: how...</content>
+  </entry>
+  
+  <entry>
+    <title>Structure</title>
+    <link href="https://tidyblocks.tech/blog/2020/07/28/structure/"/>
+    <updated>2020-07-28T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/07/28/structure/</id>
+    <content type="html">The structure of the code in TidyBlocks is dictated by three things:
+
+The architecture of Blockly.
+Our experience generating JavaScript directly from blocks.
+Our desire to write comprehensive unit tests.
+
+Rather than describing these at a high level,
+let's have a look at a simple pipeline that loads a data set,
+filters it,
+and generates a plot:
+
+...</content>
+  </entry>
+  
+  <entry>
+    <title>Questions About TidyBlocks</title>
+    <link href="https://tidyblocks.tech/blog/2020/07/27/questions-about-tidyblocks/"/>
+    <updated>2020-07-27T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/07/27/questions-about-tidyblocks/</id>
+    <content type="html">Our first post described the history of TidyBlocks so far.
+In this post we'd like to answer a few of the questions people have asked.
+Is TidyBlocks an RStudio product?
+No.
+The first version was developed by Maya Gans while she was a summer intern,
+but TidyBlocks is a free-standing open source project.
+Does TidyBlocks use...</content>
+  </entry>
+  
+  <entry>
+    <title>Project History</title>
+    <link href="https://tidyblocks.tech/blog/2020/07/26/project-history/"/>
+    <updated>2020-07-26T12:00:00</updated>
+    <id>https://tidyblocks.tech/blog/2020/07/26/project-history/</id>
+    <content type="html">TidyBlocks officially started in May 2019,
+but its roots go back to the creation of Scratch in the early 2000s,
+and beyond that to the programming language Logo designed in the late 1960s.
+Both use turtle graphics to make programming more accessible,
+but Scratch went further by allowing people to build programs by clicking...</content>
+  </entry>
+</feed>
